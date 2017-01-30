@@ -6,10 +6,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0a2aca1-a41a-4bc1-b09b-be1e159b2052" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Route/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/Route/generator/template/main@generator.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Route/models/structure.mps" afterPath="$PROJECT_DIR$/languages/Route/models/structure.mps" />
-    </list>
+    <list default="true" id="c0a2aca1-a41a-4bc1-b09b-be1e159b2052" name="Default" comment="" />
     <ignored path="RouteProj.iws" />
     <ignored path=".mps/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +22,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="d9a0889d-88c8-4073-8d78-4bff666721d1/r:7776068b-a791-4638-a150-a06482e870fb(TempModuled9a0889d-88c8-4073-8d78-4bff666721d1/TempModel_7004340016122)">
+            <model ref="f4fad91a-c1d5-4788-a484-6d969d0c2e08/r:6713ab14-aa43-4d59-9405-db63dd855087(TempModulef4fad91a-c1d5-4788-a484-6d969d0c2e08/TempModel_353487678794617)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -55,9 +52,9 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="5VEVVDoDX4e">
-                <node concept="3balQm" id="5VEVVDoDX4f" role="aymYE" />
-                <node concept="2Clz$F" id="5VEVVDoDX4g" role="aymYO">
+              <node concept="aymSD" id="3PhnPJgelqq">
+                <node concept="3balQm" id="3PhnPJgelqr" role="aymYE" />
+                <node concept="2Clz$F" id="3PhnPJgelqs" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
               </node>
@@ -86,7 +83,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Canvas" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Canvas" pinned="false" current-in-tab="false">
         <entry file="mps://node://Route/Route.structure/Canvas">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -107,7 +104,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870972" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870747" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -120,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main" pinned="false" current-in-tab="true">
         <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/main">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -147,7 +144,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870972" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870747" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -170,7 +167,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870972" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870747" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -203,7 +200,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870972" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870747" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -237,7 +234,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870972" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870747" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -272,9 +269,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="x" value="964" />
+    <option name="width" value="956" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -363,22 +359,6 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a5a3f524-2a15-4733-b0f0-2be616993f8d(Route)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Route#4418417557367141962" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Route" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator) in IdeaFile{file://C:/Users/sayele/Documents/DSLTask/languages/Route/generator/template/main@generator.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -387,26 +367,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="a5a3f524-2a15-4733-b0f0-2be616993f8d(Route)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a5a3f524-2a15-4733-b0f0-2be616993f8d(Route)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure) in IdeaFile{file://C:/Users/sayele/Documents/DSLTask/languages/Route/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,6 +387,10 @@
               <option name="myItemId" value="Route" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator) in IdeaFile{file://C:/Users/dkondras/Documents/TUe/ModelingDSL/dev/DSLTask/languages/Route/generator/template/main@generator.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -439,6 +403,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Route#4418417557367141962" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a5a3f524-2a15-4733-b0f0-2be616993f8d(Route)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Route#4418417557367141962" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Route" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,11 +442,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator) in IdeaFile{file://C:/Users/sayele/Documents/DSLTask/languages/Route/generator/template/main@generator.mps}" />
+              <option name="myItemId" value="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator) in IdeaFile{file://C:/Users/dkondras/Documents/TUe/ModelingDSL/dev/DSLTask/languages/Route/generator/template/main@generator.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="6839542567745870972" />
+              <option name="myItemId" value="4418417557367141963" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -529,10 +511,10 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\sayele\AppData\Roaming\Subversion</configuration>
+    <configuration>C:\Users\dkondras\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="964" y="0" width="956" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -544,7 +526,7 @@
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -556,7 +538,7 @@
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.346875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39174107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -589,39 +571,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://Route/Route.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://Route/Route.structure/Shape">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="31" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="emptyRefPlaceHolder" cellNumber="0" isInList="false">
-                  <node node_reference="r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)/4418417557367217579" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:be9d51ba-cf83-4155-84ce-d8c67ea2f7ba(Route.editor)/6839542567745868010" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)/4418417557367217579" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://Route/Route.structure/&lt;no name&gt;[ConceptDeclaration]" />
     <entry file="mps://node://Route/Route.structure/&lt;no name&gt;[ConceptDeclaration]" />
     <entry file="mps://node://Route/Route.structure/&lt;no name&gt;[ConceptDeclaration]" />
@@ -1450,96 +1399,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/Canvas">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/null">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/4418417557367141963" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/null">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870753" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/null">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870753" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
+    <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/Canvas" />
+    <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/null" />
+    <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/null" />
+    <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/null" />
     <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/RobotPlanet">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1882,6 +1745,75 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870972" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Route/Route.structure/Canvas">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="237" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_uj0cpq_a11a" cellNumber="0" isInList="false">
+                  <node node_reference="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870972" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870747" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870972" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Route#4418417557367141962/Route.generator.template.main@generator/main">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="297" />
+                <property name="caretXRelative" value="28" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="templateName" cellNumber="0" isInList="false">
+                  <node node_reference="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870747" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="refNodeList_dropAttrubuteRule" cellNumber="0" isInList="false">
+                  <node node_reference="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/4418417557367141963" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:823522a2-a416-40cc-98e4-ad70fb48b85f(Route.generator.template.main@generator)/6839542567745870747" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
         </state>
       </provider>
     </entry>
