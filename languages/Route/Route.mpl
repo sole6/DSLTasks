@@ -16,6 +16,9 @@
       <external-templates />
       <dependencies>
         <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">98be7193-fe28-4a7e-b481-9451370f5593(Shapes)</dependency>
+        <dependency reexport="false">6fd0d22c-9530-4cac-b8f2-5deff126ab69(Shapes#3722277501067039261)</dependency>
+        <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -46,6 +49,8 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="a5a3f524-2a15-4733-b0f0-2be616993f8d(Route)" version="0" />
         <module reference="568510cb-2cd8-4414-9abf-ebb5386aca56(Route#4418417557367141962)" version="0" />
+        <module reference="98be7193-fe28-4a7e-b481-9451370f5593(Shapes)" version="0" />
+        <module reference="6fd0d22c-9530-4cac-b8f2-5deff126ab69(Shapes#3722277501067039261)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
