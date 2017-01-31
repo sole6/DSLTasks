@@ -23,6 +23,10 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 
 public class Canvas_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -34,6 +38,7 @@ public class Canvas_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createCollection_v161ay_a0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_v161ay_b0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_v161ay_c0(editorContext, node));
     return editorCell;
   }
   private EditorCell createCollection_v161ay_a0(EditorContext editorContext, SNode node) {
@@ -127,6 +132,69 @@ public class Canvas_Editor extends DefaultNodeEditor {
         }
         if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
           elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L, 0x3d515f5bd038dd62L, "shapes"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
+        }
+      }
+    }
+  }
+  private EditorCell createCollection_v161ay_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_v161ay_c0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createRefNodeList_v161ay_a2a(editorContext, node));
+    return editorCell;
+  }
+  private EditorCell createRefNodeList_v161ay_a2a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Canvas_Editor.commandsListHandler_v161ay_a2a(node, "commands", editorContext);
+    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
+    editorCell.setCellId("refNodeList_commands");
+    editorCell.setRole(handler.getElementRole());
+    return editorCell;
+  }
+  private static class commandsListHandler_v161ay_a2a extends RefNodeListHandler {
+    public commandsListHandler_v161ay_a2a(SNode ownerNode, String childRole, EditorContext context) {
+      super(ownerNode, childRole, context, false);
+    }
+    public SNode createNodeToInsert(EditorContext editorContext) {
+      SNode listOwner = super.getOwner();
+      return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
+    }
+    public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
+      editorContext.getCellFactory().pushCellContext();
+      editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(elementNode));
+      try {
+        EditorCell elementCell = super.createNodeCell(editorContext, elementNode);
+        this.installElementCellActions(this.getOwner(), elementNode, elementCell, editorContext);
+        return elementCell;
+      } finally {
+        editorContext.getCellFactory().popCellContext();
+      }
+    }
+    protected boolean isCompatibilityMode() {
+      return false;
+    }
+    public EditorCell createEmptyCell(EditorContext editorContext) {
+      editorContext.getCellFactory().pushCellContext();
+      editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(commandsListHandler_v161ay_a2a.this.getOwner(), MetaAdapterFactory.getContainmentLink(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L, 0x19ddfc9989a24c69L, "commands")));
+      try {
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell(editorContext);
+        this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
+        return emptyCell;
+      } finally {
+        editorContext.getCellFactory().popCellContext();
+      }
+    }
+    public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+        if (elementNode != null) {
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
+          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
+        }
+        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L, 0x19ddfc9989a24c69L, "commands"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
         }
       }
     }

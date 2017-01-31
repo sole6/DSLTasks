@@ -60,6 +60,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3PhnPJgedQF" resolve="Shape" />
     </node>
+    <node concept="1TJgyj" id="1BtZ9A9C$LD" role="1TKVEi">
+      <property role="IQ2ns" value="1863923557170564201" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="commands" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1BtZ9A9_8aJ" resolve="Command" />
+    </node>
     <node concept="PrWs8" id="5VEVVDoE0t_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -101,11 +108,17 @@
   </node>
   <node concept="1TIwiD" id="1BtZ9A9zb$1">
     <property role="EcuMT" value="1863923557169150209" />
-    <property role="TrG5h" value="Line" />
+    <property role="TrG5h" value="Forward" />
     <property role="34LRSv" value="forward" />
-    <ref role="1TJDcQ" node="3PhnPJgedQF" resolve="Shape" />
-    <node concept="1TJgyi" id="1BtZ9A9zbN5" role="1TKVEl">
-      <property role="IQ2nx" value="1863923557169151173" />
+    <ref role="1TJDcQ" node="1BtZ9A9_8aJ" resolve="Command" />
+  </node>
+  <node concept="1TIwiD" id="1BtZ9A9_8aJ">
+    <property role="EcuMT" value="1863923557169660591" />
+    <property role="TrG5h" value="Command" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1BtZ9A9_8hN" role="1TKVEl">
+      <property role="IQ2nx" value="1863923557169661043" />
       <property role="TrG5h" value="length" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>

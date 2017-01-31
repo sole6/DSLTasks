@@ -7,8 +7,11 @@
     <file name="Canvas_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Route.behavior.Canvas_BehaviorDescriptor" />
     </file>
-    <file name="Line_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="Route.behavior.Line_BehaviorDescriptor" />
+    <file name="Command_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Route.behavior.Command_BehaviorDescriptor" />
+    </file>
+    <file name="Forward_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Route.behavior.Forward_BehaviorDescriptor" />
     </file>
     <file name="Rectangle_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Route.behavior.Rectangle_BehaviorDescriptor" />

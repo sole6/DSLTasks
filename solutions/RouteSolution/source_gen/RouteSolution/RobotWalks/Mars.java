@@ -5,15 +5,22 @@ package RouteSolution.RobotWalks;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.Graphics;
+import java.awt.Point;
 import java.awt.Dimension;
 
 public class Mars extends JFrame {
-
   private JPanel panel = new JPanel() {
     @Override
     protected void paintComponent(Graphics graphics) {
       super.paintComponent(graphics);
-      graphics.drawRect(12, 12, 800, 800);
+      Point point = new Point(17, 17);
+      int distance = 100;
+
+      graphics.drawRect(12, 12, 800, 600);
+
+      moveForward(point, 0, distance, graphics);
+
+
     }
   };
   public void initialize() {
@@ -27,5 +34,16 @@ public class Mars extends JFrame {
   public static void main(String[] args) {
     Mars roboteRoute = new Mars();
     roboteRoute.initialize();
+  }
+
+  public Point moveForward(Point currentPoint, int currentDirec, int distance, Graphics graphics) {
+    Point resPoint = new Point();
+    if (currentDirec == 0) {
+      resPoint.x = currentPoint.x + distance;
+      resPoint.y = currentPoint.y;
+
+    }
+    graphics.drawLine(currentPoint.x, currentPoint.y, resPoint.x, resPoint.y);
+    return resPoint;
   }
 }

@@ -14,7 +14,11 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="Route.behavior.Line_BehaviorDescriptor" file="Line_BehaviorDescriptor.java">
+  <dependency className="Route.behavior.Command_BehaviorDescriptor" file="Command_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Route.behavior.Forward_BehaviorDescriptor" file="Forward_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

@@ -18,22 +18,24 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(4);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(5);
   /*package*/ final ConceptDescriptor myConceptCanvas = createDescriptorForCanvas();
-  /*package*/ final ConceptDescriptor myConceptLine = createDescriptorForLine();
+  /*package*/ final ConceptDescriptor myConceptCommand = createDescriptorForCommand();
+  /*package*/ final ConceptDescriptor myConceptForward = createDescriptorForForward();
   /*package*/ final ConceptDescriptor myConceptRectangle = createDescriptorForRectangle();
   /*package*/ final ConceptDescriptor myConceptShape = createDescriptorForShape();
 
   public StructureAspectDescriptor() {
     myIndexMap.put(myConceptCanvas.getId(), 0);
-    myIndexMap.put(myConceptLine.getId(), 1);
-    myIndexMap.put(myConceptRectangle.getId(), 2);
-    myIndexMap.put(myConceptShape.getId(), 3);
+    myIndexMap.put(myConceptCommand.getId(), 1);
+    myIndexMap.put(myConceptForward.getId(), 2);
+    myIndexMap.put(myConceptRectangle.getId(), 3);
+    myIndexMap.put(myConceptShape.getId(), 4);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCanvas, myConceptLine, myConceptRectangle, myConceptShape);
+    return Arrays.asList(myConceptCanvas, myConceptCommand, myConceptForward, myConceptRectangle, myConceptShape);
   }
 
   @Override
@@ -47,10 +49,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 0:
         return myConceptCanvas;
       case 1:
-        return myConceptLine;
+        return myConceptCommand;
       case 2:
-        return myConceptRectangle;
+        return myConceptForward;
       case 3:
+        return myConceptRectangle;
+      case 4:
         return myConceptShape;
       default:
         throw new IllegalStateException();
@@ -68,10 +72,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
 
   private static ConceptDescriptor createDescriptorForCanvas() {
-    return new ConceptDescriptorBuilder("Route.structure.Canvas", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.execution.util.structure.IMainClass").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L), MetaIdFactory.conceptId(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x3d515f5bd038dd62L, "shapes", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL), true, true, false, new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "4418417557367217506"))).children(new String[]{"shapes"}, new boolean[]{true}).rootable().alias("canvas", "").sourceNode(new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "4418417557367217400")).create();
+    return new ConceptDescriptorBuilder("Route.structure.Canvas", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.execution.util.structure.IMainClass").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L), MetaIdFactory.conceptId(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x3d515f5bd038dd62L, "shapes", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL), true, true, false, new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "4418417557367217506")), new ConceptDescriptorBuilder.Link(0x19ddfc9989a24c69L, "commands", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL), true, true, false, new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "1863923557170564201"))).children(new String[]{"shapes", "commands"}, new boolean[]{true, true}).rootable().alias("canvas", "").sourceNode(new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "4418417557367217400")).create();
   }
-  private static ConceptDescriptor createDescriptorForLine() {
-    return new ConceptDescriptorBuilder("Route.structure.Line", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99898cb901L)).super_("Route.structure.Shape").version(1).super_(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL)).parents("Route.structure.Shape").parentIds(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x19ddfc99898cbcc5L, "length", new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "1863923557169151173"))).properties("length").alias("forward", "").sourceNode(new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "1863923557169150209")).create();
+  private static ConceptDescriptor createDescriptorForCommand() {
+    return new ConceptDescriptorBuilder("Route.structure.Command", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x19ddfc9989948473L, "length", new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "1863923557169661043"))).properties("length").abstract_().sourceNode(new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "1863923557169660591")).create();
+  }
+  private static ConceptDescriptor createDescriptorForForward() {
+    return new ConceptDescriptorBuilder("Route.structure.Forward", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99898cb901L)).super_("Route.structure.Command").version(1).super_(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL)).parents("Route.structure.Command").parentIds(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL)).alias("forward", "").sourceNode(new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "1863923557169150209")).create();
   }
   private static ConceptDescriptor createDescriptorForRectangle() {
     return new ConceptDescriptorBuilder("Route.structure.Rectangle", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddcfL)).super_("Route.structure.Shape").version(1).super_(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL)).parents("Route.structure.Shape").parentIds(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x3d515f5bd038de21L, "length", new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "4418417557367217697")), new ConceptDescriptorBuilder.Prop(0x3d515f5bd038de24L, "width", new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "4418417557367217700"))).properties("length", "width").alias("boundary", "").sourceNode(new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "4418417557367217615")).create();

@@ -9,6 +9,10 @@
   </imports>
   <registry>
     <language id="a5a3f524-2a15-4733-b0f0-2be616993f8d" name="Route">
+      <concept id="1863923557169660591" name="Route.structure.Command" flags="ng" index="2ginSQ">
+        <property id="1863923557169661043" name="length" index="2ginzE" />
+      </concept>
+      <concept id="1863923557169150209" name="Route.structure.Forward" flags="ng" index="2gkkmo" />
       <concept id="4418417557367217615" name="Route.structure.Rectangle" flags="ng" index="3Hqoak">
         <property id="4418417557367217697" name="length" index="3Hqo5U" />
         <property id="4418417557367217700" name="width" index="3Hqo5Z" />
@@ -18,6 +22,7 @@
         <property id="4418417557367217607" name="yPos" index="3Hqoas" />
       </concept>
       <concept id="4418417557367217400" name="Route.structure.Canvas" flags="ng" index="3Hqoez">
+        <child id="1863923557170564201" name="commands" index="2gvV3K" />
         <child id="4418417557367217506" name="shapes" index="3Hqo8T" />
       </concept>
     </language>
@@ -33,7 +38,10 @@
       <property role="3Hqoah" value="12" />
       <property role="3Hqoas" value="12" />
       <property role="3Hqo5U" value="800" />
-      <property role="3Hqo5Z" value="800" />
+      <property role="3Hqo5Z" value="600" />
+    </node>
+    <node concept="2gkkmo" id="1BtZ9A9CP0U" role="2gvV3K">
+      <property role="2ginzE" value="100" />
     </node>
   </node>
 </model>
