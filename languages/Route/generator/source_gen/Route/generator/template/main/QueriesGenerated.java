@@ -12,13 +12,37 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 @Generated
 public class QueriesGenerated {
-  public static Object propertyMacro_GetPropertyValue_5898776707557736279(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_6680203281933211722(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
-  public static Object propertyMacro_GetPropertyValue_6839542567745878802(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_6680203281932911552(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
-  public static Iterable<SNode> sourceNodesQuery_5898776707557819858(final SourceSubstituteMacroNodesContext _context) {
+  public static Object propertyMacro_GetPropertyValue_1863923557169074224(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL, 0x3d515f5bd038ddcaL, "xPos"));
+  }
+  public static Object propertyMacro_GetPropertyValue_1863923557169075601(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL, 0x3d515f5bd038ddc7L, "yPos"));
+  }
+  public static Object propertyMacro_GetPropertyValue_1863923557169077012(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddcfL, 0x3d515f5bd038de21L, "length"));
+  }
+  public static Object propertyMacro_GetPropertyValue_1863923557169078457(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddcfL, 0x3d515f5bd038de24L, "width"));
+  }
+  public static Object propertyMacro_GetPropertyValue_1863923557169391454(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99898cb901L, 0x19ddfc99898cbcc5L, "length")) + SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL, 0x3d515f5bd038ddcaL, "xPos"));
+  }
+  public static Object propertyMacro_GetPropertyValue_1863923557169512773(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL, 0x3d515f5bd038ddc7L, "yPos"));
+  }
+  public static Object propertyMacro_GetPropertyValue_1863923557169424169(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99898cb901L, 0x19ddfc99898cbcc5L, "length")) + SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL, 0x3d515f5bd038ddcaL, "xPos"));
+  }
+  public static Object propertyMacro_GetPropertyValue_1863923557169448313(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL, 0x3d515f5bd038ddc7L, "yPos"));
+  }
+  public static Iterable<SNode> sourceNodesQuery_6680203281933289115(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L, 0x3d515f5bd038dd62L, "shapes"));
   }
 }

@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/Route/Route.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/RouteSolution/RouteSolution.msd" folder="" />
     </projectModules>
   </component>
 </project>

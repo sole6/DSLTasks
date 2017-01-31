@@ -8,6 +8,9 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.nodeEditor.EditorManager;
 
 public class Rectangle_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -17,83 +20,57 @@ public class Rectangle_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
     editorCell.setCellId("Collection_xvcrwe_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_xvcrwe_a0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_xvcrwe_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_xvcrwe_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_xvcrwe_c0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_xvcrwe_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_xvcrwe_d0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_xvcrwe_e0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_xvcrwe_f0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_xvcrwe_g0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_xvcrwe_h0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_xvcrwe_i0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_xvcrwe_j0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_xvcrwe_k0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_xvcrwe_e0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_xvcrwe_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "#");
-    editorCell.setCellId("Constant_xvcrwe_a0");
-    editorCell.setDefaultText("");
+  private EditorCell createComponent_xvcrwe_a0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "Route.editor.ShapeComp");
     return editorCell;
   }
   private EditorCell createConstant_xvcrwe_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "ShapeComp");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "length : ");
     editorCell.setCellId("Constant_xvcrwe_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_xvcrwe_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "#");
-    editorCell.setCellId("Constant_xvcrwe_c0");
-    editorCell.setDefaultText("");
+  private EditorCell createProperty_xvcrwe_c0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("length");
+    provider.setNoTargetText("<no length>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_length");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
     return editorCell;
   }
   private EditorCell createConstant_xvcrwe_d0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "length:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "width: ");
     editorCell.setCellId("Constant_xvcrwe_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_xvcrwe_e0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_xvcrwe_e0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_xvcrwe_f0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "length");
-    editorCell.setCellId("Constant_xvcrwe_f0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_xvcrwe_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_xvcrwe_g0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_xvcrwe_h0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "width:");
-    editorCell.setCellId("Constant_xvcrwe_h0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_xvcrwe_i0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_xvcrwe_i0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_xvcrwe_j0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "width");
-    editorCell.setCellId("Constant_xvcrwe_j0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_xvcrwe_k0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_xvcrwe_k0");
-    editorCell.setDefaultText("");
+  private EditorCell createProperty_xvcrwe_e0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("width");
+    provider.setNoTargetText("<no width>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_width");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
     return editorCell;
   }
 }

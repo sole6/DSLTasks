@@ -28,6 +28,11 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
           break;
         case 1:
           if (true) {
+            return Collections.<ConceptEditor>singletonList(new Line_Editor());
+          }
+          break;
+        case 2:
+          if (true) {
             return Collections.<ConceptEditor>singletonList(new Rectangle_Editor());
           }
           break;
@@ -66,6 +71,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L, "Route.structure.Canvas"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddcfL, "Route.structure.Rectangle"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L, "Route.structure.Canvas"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99898cb901L, "Route.structure.Line"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddcfL, "Route.structure.Rectangle"));
   private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL, "Route.structure.Shape"));
 }

@@ -11,6 +11,9 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.nodeEditor.EditorManager;
 
 public class ShapeComp implements ConceptEditorComponent {
   @NotNull
@@ -23,83 +26,57 @@ public class ShapeComp implements ConceptEditorComponent {
   private EditorCell createCollection_30er6g_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
     editorCell.setCellId("Collection_30er6g_a");
-    editorCell.addEditorCell(this.createConstant_30er6g_a0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_30er6g_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_30er6g_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_30er6g_c0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_30er6g_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_30er6g_d0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_30er6g_e0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_30er6g_f0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_30er6g_g0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_30er6g_h0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_30er6g_i0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_30er6g_j0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_30er6g_k0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_30er6g_e0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_30er6g_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "#");
-    editorCell.setCellId("Constant_30er6g_a0");
-    editorCell.setDefaultText("");
+  private EditorCell createComponent_30er6g_a0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "jetbrains.mps.lang.core.editor.alias");
     return editorCell;
   }
   private EditorCell createConstant_30er6g_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "alias");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "x:");
     editorCell.setCellId("Constant_30er6g_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_30er6g_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "#");
-    editorCell.setCellId("Constant_30er6g_c0");
-    editorCell.setDefaultText("");
+  private EditorCell createProperty_30er6g_c0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("xPos");
+    provider.setNoTargetText("<no xPos>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("SC_property_xPos");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
     return editorCell;
   }
   private EditorCell createConstant_30er6g_d0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "x:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "y:");
     editorCell.setCellId("Constant_30er6g_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_30er6g_e0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_30er6g_e0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_30er6g_f0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "xPos");
-    editorCell.setCellId("Constant_30er6g_f0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_30er6g_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_30er6g_g0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_30er6g_h0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "y:");
-    editorCell.setCellId("Constant_30er6g_h0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_30er6g_i0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_30er6g_i0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_30er6g_j0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "yPos");
-    editorCell.setCellId("Constant_30er6g_j0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_30er6g_k0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_30er6g_k0");
-    editorCell.setDefaultText("");
+  private EditorCell createProperty_30er6g_e0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("yPos");
+    provider.setNoTargetText("<no yPos>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("SC_property_yPos");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
     return editorCell;
   }
 }
