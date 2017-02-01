@@ -129,5 +129,11 @@
     <property role="34LRSv" value="turn left" />
     <ref role="1TJDcQ" node="1BtZ9A9_8aJ" resolve="Command" />
   </node>
+  <node concept="1TIwiD" id="1RjsZLh1Q5a">
+    <property role="EcuMT" value="2149188974714249546" />
+    <property role="TrG5h" value="Back" />
+    <property role="34LRSv" value="turn backward" />
+    <ref role="1TJDcQ" node="1BtZ9A9_8aJ" resolve="Command" />
+  </node>
 </model>
 

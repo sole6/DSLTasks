@@ -23,20 +23,25 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       switch (switchIndex) {
         case 0:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Canvas_Editor());
+            return Collections.<ConceptEditor>singletonList(new Back_Editor());
           }
           break;
         case 1:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Forward_Editor());
+            return Collections.<ConceptEditor>singletonList(new Canvas_Editor());
           }
           break;
         case 2:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Left_Editor());
+            return Collections.<ConceptEditor>singletonList(new Forward_Editor());
           }
           break;
         case 3:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new Left_Editor());
+          }
+          break;
+        case 4:
           if (true) {
             return Collections.<ConceptEditor>singletonList(new Rectangle_Editor());
           }
@@ -83,6 +88,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L, "Route.structure.Canvas"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99898cb901L, "Route.structure.Forward"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x1dd373fc50ef8d9eL, "Route.structure.Left"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddcfL, "Route.structure.Rectangle"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x1dd373fc5107614aL, "Route.structure.Back"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L, "Route.structure.Canvas"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99898cb901L, "Route.structure.Forward"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x1dd373fc50ef8d9eL, "Route.structure.Left"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddcfL, "Route.structure.Rectangle"));
   private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL, "Route.structure.Command"), MetaAdapterFactory.getConcept(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL, "Route.structure.Shape"));
 }
