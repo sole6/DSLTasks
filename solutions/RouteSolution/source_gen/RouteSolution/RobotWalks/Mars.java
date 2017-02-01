@@ -16,16 +16,12 @@ public class Mars extends JFrame {
       Point point = new Point(17, 17);
       int distance = 100;
       int leftDistance = 125;
-      Point knownPoint = new Point();
-
-
+      Point knownPoint = point;
 
       graphics.drawRect(12, 12, 800, 600);
-      knownPoint = moveForward(point, 0, distance, graphics);
-      knownPoint = moveForward(point, 0, distance, graphics);
-      moveLeft(knownPoint, 1, leftDistance, graphics);
-      moveLeft(knownPoint, 1, leftDistance, graphics);
-
+      knownPoint = moveForward(knownPoint, distance, graphics);
+      knownPoint = moveLeft(knownPoint, distance, graphics);
+      knownPoint = moveForward(knownPoint, distance, graphics);
     }
   };
   public void initialize() {
@@ -41,7 +37,7 @@ public class Mars extends JFrame {
     roboteRoute.initialize();
   }
 
-  public Point moveForward(Point currentPoint, int currentDirec, int distance, Graphics graphics) {
+  public Point moveForward(Point currentPoint, int distance, Graphics graphics) {
     Point resPoint = new Point();
     resPoint.x = currentPoint.x + distance;
     resPoint.y = currentPoint.y;
@@ -50,7 +46,7 @@ public class Mars extends JFrame {
     return resPoint;
   }
 
-  public Point moveLeft(Point currentPoint, int currentDirec, int distance, Graphics graphics) {
+  public Point moveLeft(Point currentPoint, int distance, Graphics graphics) {
     Point resPoint = new Point();
     resPoint.x = currentPoint.x;
     resPoint.y = currentPoint.y + distance;
