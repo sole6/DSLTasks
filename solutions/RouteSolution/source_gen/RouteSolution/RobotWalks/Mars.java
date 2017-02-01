@@ -15,11 +15,16 @@ public class Mars extends JFrame {
       super.paintComponent(graphics);
       Point point = new Point(17, 17);
       int distance = 100;
+      int leftDistance = 125;
+      Point knownPoint = new Point();
+
+
 
       graphics.drawRect(12, 12, 800, 600);
-
-      moveForward(point, 0, distance, graphics);
-
+      knownPoint = moveForward(point, 0, distance, graphics);
+      knownPoint = moveForward(point, 0, distance, graphics);
+      moveLeft(knownPoint, 1, leftDistance, graphics);
+      moveLeft(knownPoint, 1, leftDistance, graphics);
 
     }
   };
@@ -38,12 +43,20 @@ public class Mars extends JFrame {
 
   public Point moveForward(Point currentPoint, int currentDirec, int distance, Graphics graphics) {
     Point resPoint = new Point();
-    if (currentDirec == 0) {
-      resPoint.x = currentPoint.x + distance;
-      resPoint.y = currentPoint.y;
+    resPoint.x = currentPoint.x + distance;
+    resPoint.y = currentPoint.y;
 
-    }
     graphics.drawLine(currentPoint.x, currentPoint.y, resPoint.x, resPoint.y);
     return resPoint;
   }
+
+  public Point moveLeft(Point currentPoint, int currentDirec, int distance, Graphics graphics) {
+    Point resPoint = new Point();
+    resPoint.x = currentPoint.x;
+    resPoint.y = currentPoint.y + distance;
+
+    graphics.drawLine(currentPoint.x, currentPoint.y, resPoint.x, resPoint.y);
+    return resPoint;
+  }
+
 }

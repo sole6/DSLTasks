@@ -13,6 +13,7 @@
         <property id="1863923557169661043" name="length" index="2ginzE" />
       </concept>
       <concept id="1863923557169150209" name="Route.structure.Forward" flags="ng" index="2gkkmo" />
+      <concept id="2149188974712688030" name="Route.structure.Left" flags="ng" index="1dffTy" />
       <concept id="4418417557367217615" name="Route.structure.Rectangle" flags="ng" index="3Hqoak">
         <property id="4418417557367217697" name="length" index="3Hqo5U" />
         <property id="4418417557367217700" name="width" index="3Hqo5Z" />
@@ -40,8 +41,11 @@
       <property role="3Hqo5U" value="800" />
       <property role="3Hqo5Z" value="600" />
     </node>
-    <node concept="2gkkmo" id="1BtZ9A9CP0U" role="2gvV3K">
+    <node concept="2gkkmo" id="1RjsZLgYiyG" role="2gvV3K">
       <property role="2ginzE" value="100" />
+    </node>
+    <node concept="1dffTy" id="1RjsZLgYm1X" role="2gvV3K">
+      <property role="2ginzE" value="125" />
     </node>
   </node>
 </model>

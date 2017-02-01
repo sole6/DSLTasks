@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Canvas = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Command = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Forward = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Left = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rectangle = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Shape = new ConceptPresentationBuilder().create();
 
@@ -27,8 +28,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 2:
         return props_Forward;
       case 3:
-        return props_Rectangle;
+        return props_Left;
       case 4:
+        return props_Rectangle;
+      case 5:
         return props_Shape;
     }
     throw new IllegalStateException("Unknown concept " + c);

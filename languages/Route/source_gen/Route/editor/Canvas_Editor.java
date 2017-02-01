@@ -26,7 +26,6 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 
 public class Canvas_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -147,7 +146,7 @@ public class Canvas_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefNodeList_v161ay_a2a(EditorContext editorContext, SNode node) {
     AbstractCellListHandler handler = new Canvas_Editor.commandsListHandler_v161ay_a2a(node, "commands", editorContext);
-    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
+    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_commands");
     editorCell.setRole(handler.getElementRole());
     return editorCell;

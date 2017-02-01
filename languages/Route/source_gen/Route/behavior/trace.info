@@ -13,6 +13,9 @@
     <file name="Forward_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Route.behavior.Forward_BehaviorDescriptor" />
     </file>
+    <file name="Left_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Route.behavior.Left_BehaviorDescriptor" />
+    </file>
     <file name="Rectangle_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Route.behavior.Rectangle_BehaviorDescriptor" />
     </file>

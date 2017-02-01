@@ -18,10 +18,11 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(5);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(6);
   /*package*/ final ConceptDescriptor myConceptCanvas = createDescriptorForCanvas();
   /*package*/ final ConceptDescriptor myConceptCommand = createDescriptorForCommand();
   /*package*/ final ConceptDescriptor myConceptForward = createDescriptorForForward();
+  /*package*/ final ConceptDescriptor myConceptLeft = createDescriptorForLeft();
   /*package*/ final ConceptDescriptor myConceptRectangle = createDescriptorForRectangle();
   /*package*/ final ConceptDescriptor myConceptShape = createDescriptorForShape();
 
@@ -29,13 +30,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     myIndexMap.put(myConceptCanvas.getId(), 0);
     myIndexMap.put(myConceptCommand.getId(), 1);
     myIndexMap.put(myConceptForward.getId(), 2);
-    myIndexMap.put(myConceptRectangle.getId(), 3);
-    myIndexMap.put(myConceptShape.getId(), 4);
+    myIndexMap.put(myConceptLeft.getId(), 3);
+    myIndexMap.put(myConceptRectangle.getId(), 4);
+    myIndexMap.put(myConceptShape.getId(), 5);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCanvas, myConceptCommand, myConceptForward, myConceptRectangle, myConceptShape);
+    return Arrays.asList(myConceptCanvas, myConceptCommand, myConceptForward, myConceptLeft, myConceptRectangle, myConceptShape);
   }
 
   @Override
@@ -53,8 +55,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 2:
         return myConceptForward;
       case 3:
-        return myConceptRectangle;
+        return myConceptLeft;
       case 4:
+        return myConceptRectangle;
+      case 5:
         return myConceptShape;
       default:
         throw new IllegalStateException();
@@ -79,6 +83,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForForward() {
     return new ConceptDescriptorBuilder("Route.structure.Forward", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99898cb901L)).super_("Route.structure.Command").version(1).super_(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL)).parents("Route.structure.Command").parentIds(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL)).alias("forward", "").sourceNode(new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "1863923557169150209")).create();
+  }
+  private static ConceptDescriptor createDescriptorForLeft() {
+    return new ConceptDescriptorBuilder("Route.structure.Left", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x1dd373fc50ef8d9eL)).super_("Route.structure.Command").version(1).super_(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL)).parents("Route.structure.Command").parentIds(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL)).alias("turn left", "").sourceNode(new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "2149188974712688030")).create();
   }
   private static ConceptDescriptor createDescriptorForRectangle() {
     return new ConceptDescriptorBuilder("Route.structure.Rectangle", MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddcfL)).super_("Route.structure.Shape").version(1).super_(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL)).parents("Route.structure.Shape").parentIds(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038ddabL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x3d515f5bd038de21L, "length", new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "4418417557367217697")), new ConceptDescriptorBuilder.Prop(0x3d515f5bd038de24L, "width", new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "4418417557367217700"))).properties("length", "width").alias("boundary", "").sourceNode(new SNodePointer("r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)", "4418417557367217615")).create();

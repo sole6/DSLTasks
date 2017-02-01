@@ -123,5 +123,11 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1RjsZLgVSQu">
+    <property role="EcuMT" value="2149188974712688030" />
+    <property role="TrG5h" value="Left" />
+    <property role="34LRSv" value="turn left" />
+    <ref role="1TJDcQ" node="1BtZ9A9_8aJ" resolve="Command" />
+  </node>
 </model>
 
