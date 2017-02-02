@@ -7,6 +7,12 @@
     <file name="ExtendedCanvas_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ExtendedRoute.behavior.ExtendedCanvas_BehaviorDescriptor" />
     </file>
+    <file name="ForwardExtended_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ExtendedRoute.behavior.ForwardExtended_BehaviorDescriptor" />
+    </file>
+    <file name="Variable_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ExtendedRoute.behavior.Variable_BehaviorDescriptor" />
+    </file>
   </root>
 </debug-info>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="ExtendedRouteSolution.RobotWalksVar.ExtendedMars" file="ExtendedMars.java">
+  <dependency className="ExtendedRouteSolution.RobotWalksVar.marsExtended" file="marsExtended.java">
     <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.awt.Point" />

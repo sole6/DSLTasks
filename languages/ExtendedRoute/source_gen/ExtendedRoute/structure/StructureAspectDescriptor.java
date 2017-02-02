@@ -18,16 +18,20 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(1);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(3);
   /*package*/ final ConceptDescriptor myConceptExtendedCanvas = createDescriptorForExtendedCanvas();
+  /*package*/ final ConceptDescriptor myConceptForwardExtended = createDescriptorForForwardExtended();
+  /*package*/ final ConceptDescriptor myConceptVariable = createDescriptorForVariable();
 
   public StructureAspectDescriptor() {
     myIndexMap.put(myConceptExtendedCanvas.getId(), 0);
+    myIndexMap.put(myConceptForwardExtended.getId(), 1);
+    myIndexMap.put(myConceptVariable.getId(), 2);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptExtendedCanvas);
+    return Arrays.asList(myConceptExtendedCanvas, myConceptForwardExtended, myConceptVariable);
   }
 
   @Override
@@ -40,6 +44,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (((int) index)) {
       case 0:
         return myConceptExtendedCanvas;
+      case 1:
+        return myConceptForwardExtended;
+      case 2:
+        return myConceptVariable;
       default:
         throw new IllegalStateException();
     }
@@ -56,6 +64,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
 
   private static ConceptDescriptor createDescriptorForExtendedCanvas() {
-    return new ConceptDescriptorBuilder("ExtendedRoute.structure.ExtendedCanvas", MetaIdFactory.conceptId(0xbb2249589654857L, 0xb2e5c6c1ae35c7ceL, 0x1dd373fc510766b2L)).super_("Route.structure.Canvas").version(1).super_(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L)).parents("Route.structure.Canvas").parentIds(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L)).rootable().sourceNode(new SNodePointer("r:8a4135af-473a-47f6-ae2f-ade7bd95bb9a(ExtendedRoute.structure)", "2149188974714250930")).create();
+    return new ConceptDescriptorBuilder("ExtendedRoute.structure.ExtendedCanvas", MetaIdFactory.conceptId(0xbb2249589654857L, 0xb2e5c6c1ae35c7ceL, 0x1dd373fc510766b2L)).super_("Route.structure.Canvas").version(1).super_(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L)).parents("Route.structure.Canvas", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x3d515f5bd038dcf8L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x582dbe9ad45f2f9aL, "variables", MetaIdFactory.conceptId(0xbb2249589654857L, 0xb2e5c6c1ae35c7ceL, 0x1dd373fc51081080L), true, false, false, new SNodePointer("r:8a4135af-473a-47f6-ae2f-ade7bd95bb9a(ExtendedRoute.structure)", "6353944221486886810"))).children(new String[]{"variables"}, new boolean[]{false}).rootable().alias("extendedcanvas", "").sourceNode(new SNodePointer("r:8a4135af-473a-47f6-ae2f-ade7bd95bb9a(ExtendedRoute.structure)", "2149188974714250930")).create();
+  }
+  private static ConceptDescriptor createDescriptorForForwardExtended() {
+    return new ConceptDescriptorBuilder("ExtendedRoute.structure.ForwardExtended", MetaIdFactory.conceptId(0xbb2249589654857L, 0xb2e5c6c1ae35c7ceL, 0x1dd373fc5108f645L)).super_("Route.structure.Command").version(1).super_(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL)).parents("Route.structure.Command").parentIds(MetaIdFactory.conceptId(0xa5a3f5242a154733L, 0xb0f02be616993f8dL, 0x19ddfc99899482afL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x582dbe9ad45a3f33L, "length", MetaIdFactory.conceptId(0xbb2249589654857L, 0xb2e5c6c1ae35c7ceL, 0x1dd373fc51081080L), false, new SNodePointer("r:8a4135af-473a-47f6-ae2f-ade7bd95bb9a(ExtendedRoute.structure)", "6353944221486563123"))).references("length").alias("ForwardEx", "").sourceNode(new SNodePointer("r:8a4135af-473a-47f6-ae2f-ade7bd95bb9a(ExtendedRoute.structure)", "2149188974714353221")).create();
+  }
+  private static ConceptDescriptor createDescriptorForVariable() {
+    return new ConceptDescriptorBuilder("ExtendedRoute.structure.Variable", MetaIdFactory.conceptId(0xbb2249589654857L, 0xb2e5c6c1ae35c7ceL, 0x1dd373fc51081080L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x1dd373fc510810b7L, "var", new SNodePointer("r:8a4135af-473a-47f6-ae2f-ade7bd95bb9a(ExtendedRoute.structure)", "2149188974714294455"))).properties("var").alias("variable", "").sourceNode(new SNodePointer("r:8a4135af-473a-47f6-ae2f-ade7bd95bb9a(ExtendedRoute.structure)", "2149188974714294400")).create();
   }
 }

@@ -7,79 +7,75 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <root nodeRef="r:fcb1c1c5-97b6-4921-8569-f83eabdac070(ExtendedRouteSolution.RobotWalksVar)/2149188974714278470">
-    <file name="ExtendedMars.java">
-      <node id="2149188974714278470" at="14,54,15,37" concept="0" />
-      <node id="2149188974714278470" at="15,37,16,38" concept="3" />
-      <node id="2149188974714278470" at="16,38,17,24" concept="3" />
-      <node id="2149188974714278470" at="17,24,18,27" concept="3" />
-      <node id="2149188974714278470" at="18,27,19,31" concept="3" />
-      <node id="2149188974714278470" at="19,31,20,0" concept="5" />
-      <node id="2149188974714278535" at="20,0,21,40" concept="0" />
-      <node id="2149188974714278542" at="21,40,22,63" concept="0" />
-      <node id="2149188974714278550" at="22,63,23,60" concept="0" />
-      <node id="2149188974714278563" at="23,60,24,63" concept="0" />
-      <node id="2149188974714278470" at="27,28,28,34" concept="0" />
-      <node id="2149188974714278470" at="28,34,29,56" concept="0" />
-      <node id="2149188974714278470" at="29,56,30,20" concept="0" />
-      <node id="2149188974714278470" at="30,20,31,53" concept="0" />
-      <node id="2149188974714278470" at="31,53,32,16" concept="0" />
-      <node id="2149188974714278470" at="32,16,33,26" concept="0" />
-      <node id="2149188974714278470" at="35,42,36,50" concept="3" />
-      <node id="2149188974714278470" at="36,50,37,29" concept="0" />
-      <node id="2149188974714278470" at="40,81,41,33" concept="3" />
-      <node id="2149188974714278470" at="41,33,42,43" concept="0" />
-      <node id="2149188974714278470" at="42,43,43,32" concept="0" />
-      <node id="2149188974714278470" at="43,32,44,0" concept="5" />
-      <node id="2149188974714278470" at="44,0,45,78" concept="0" />
-      <node id="2149188974714278470" at="45,78,46,20" concept="4" />
-      <node id="2149188974714278470" at="49,78,50,33" concept="3" />
-      <node id="2149188974714278470" at="50,33,51,32" concept="0" />
-      <node id="2149188974714278470" at="51,32,52,43" concept="0" />
-      <node id="2149188974714278470" at="52,43,53,0" concept="5" />
-      <node id="2149188974714278470" at="53,0,54,78" concept="0" />
-      <node id="2149188974714278470" at="54,78,55,20" concept="4" />
-      <node id="2149188974714278470" at="35,0,39,0" concept="6" trace="main#([Ljava/lang/String;)V" />
-      <node id="2149188974714278470" at="27,0,35,0" concept="2" trace="initialize#()V" />
-      <node id="2149188974714278470" at="40,0,48,0" concept="2" trace="moveForward#(Ljava/awt/Point;ILjava/awt/Graphics;)Ljava/awt/Point;" />
-      <node id="2149188974714278470" at="49,0,57,0" concept="2" trace="moveLeft#(Ljava/awt/Point;ILjava/awt/Graphics;)Ljava/awt/Point;" />
-      <node id="2149188974714278470" at="13,0,26,0" concept="2" trace="paintComponent#(Ljava/awt/Graphics;)V" />
-      <node id="2149188974714278470" at="12,0,27,0" concept="1" trace="panel" />
-      <scope id="2149188974714278470" at="35,42,37,29">
-        <var name="roboteRoute" id="2149188974714278470" />
+  <root nodeRef="r:fcb1c1c5-97b6-4921-8569-f83eabdac070(ExtendedRouteSolution.RobotWalksVar)/6353944221487047707">
+    <file name="marsExtended.java">
+      <node id="6353944221487047707" at="14,54,15,37" concept="0" />
+      <node id="6353944221487047707" at="15,37,16,38" concept="3" />
+      <node id="6353944221487047707" at="16,38,17,27" concept="3" />
+      <node id="6353944221487047707" at="17,27,18,31" concept="3" />
+      <node id="6353944221487047707" at="18,31,19,0" concept="5" />
+      <node id="6353944221487047765" at="19,0,20,42" concept="0" />
+      <node id="6353944221487170226" at="20,42,21,58" concept="0" />
+      <node id="6353944221487047707" at="24,28,25,34" concept="0" />
+      <node id="6353944221487047707" at="25,34,26,56" concept="0" />
+      <node id="6353944221487047707" at="26,56,27,20" concept="0" />
+      <node id="6353944221487047707" at="27,20,28,53" concept="0" />
+      <node id="6353944221487047707" at="28,53,29,16" concept="0" />
+      <node id="6353944221487047707" at="29,16,30,26" concept="0" />
+      <node id="6353944221487047707" at="32,42,33,50" concept="3" />
+      <node id="6353944221487047707" at="33,50,34,29" concept="0" />
+      <node id="6353944221487047707" at="37,81,38,33" concept="3" />
+      <node id="6353944221487047707" at="38,33,39,43" concept="0" />
+      <node id="6353944221487047707" at="39,43,40,32" concept="0" />
+      <node id="6353944221487047707" at="40,32,41,0" concept="5" />
+      <node id="6353944221487047707" at="41,0,42,78" concept="0" />
+      <node id="6353944221487047707" at="42,78,43,20" concept="4" />
+      <node id="6353944221487047707" at="46,78,47,33" concept="3" />
+      <node id="6353944221487047707" at="47,33,48,32" concept="0" />
+      <node id="6353944221487047707" at="48,32,49,43" concept="0" />
+      <node id="6353944221487047707" at="49,43,50,0" concept="5" />
+      <node id="6353944221487047707" at="50,0,51,78" concept="0" />
+      <node id="6353944221487047707" at="51,78,52,20" concept="4" />
+      <node id="6353944221487047707" at="32,0,36,0" concept="6" trace="main#([Ljava/lang/String;)V" />
+      <node id="6353944221487047707" at="24,0,32,0" concept="2" trace="initialize#()V" />
+      <node id="6353944221487047707" at="37,0,45,0" concept="2" trace="moveForward#(Ljava/awt/Point;ILjava/awt/Graphics;)Ljava/awt/Point;" />
+      <node id="6353944221487047707" at="46,0,54,0" concept="2" trace="moveLeft#(Ljava/awt/Point;ILjava/awt/Graphics;)Ljava/awt/Point;" />
+      <node id="6353944221487047707" at="13,0,23,0" concept="2" trace="paintComponent#(Ljava/awt/Graphics;)V" />
+      <node id="6353944221487047707" at="12,0,24,0" concept="1" trace="panel" />
+      <scope id="6353944221487047707" at="32,42,34,29">
+        <var name="roboteRoute" id="6353944221487047707" />
       </scope>
-      <scope id="2149188974714278470" at="35,0,39,0">
-        <var name="args" id="2149188974714278470" />
+      <scope id="6353944221487047707" at="32,0,36,0">
+        <var name="args" id="6353944221487047707" />
       </scope>
-      <scope id="2149188974714278470" at="27,28,33,26" />
-      <scope id="2149188974714278470" at="40,81,46,20">
-        <var name="resPoint" id="2149188974714278470" />
+      <scope id="6353944221487047707" at="24,28,30,26" />
+      <scope id="6353944221487047707" at="37,81,43,20">
+        <var name="resPoint" id="6353944221487047707" />
       </scope>
-      <scope id="2149188974714278470" at="49,78,55,20">
-        <var name="resPoint" id="2149188974714278470" />
+      <scope id="6353944221487047707" at="46,78,52,20">
+        <var name="resPoint" id="6353944221487047707" />
       </scope>
-      <scope id="2149188974714278470" at="27,0,35,0" />
-      <scope id="2149188974714278470" at="40,0,48,0">
-        <var name="currentPoint" id="2149188974714278470" />
-        <var name="distance" id="2149188974714278470" />
-        <var name="graphics" id="2149188974714278470" />
+      <scope id="6353944221487047707" at="14,54,21,58">
+        <var name="knownPoint" id="6353944221487047707" />
+        <var name="leftDistance" id="6353944221487047707" />
+        <var name="point" id="6353944221487047707" />
       </scope>
-      <scope id="2149188974714278470" at="49,0,57,0">
-        <var name="currentPoint" id="2149188974714278470" />
-        <var name="distance" id="2149188974714278470" />
-        <var name="graphics" id="2149188974714278470" />
+      <scope id="6353944221487047707" at="24,0,32,0" />
+      <scope id="6353944221487047707" at="37,0,45,0">
+        <var name="currentPoint" id="6353944221487047707" />
+        <var name="distance" id="6353944221487047707" />
+        <var name="graphics" id="6353944221487047707" />
       </scope>
-      <scope id="2149188974714278470" at="14,54,24,63">
-        <var name="distance" id="2149188974714278470" />
-        <var name="knownPoint" id="2149188974714278470" />
-        <var name="leftDistance" id="2149188974714278470" />
-        <var name="point" id="2149188974714278470" />
+      <scope id="6353944221487047707" at="46,0,54,0">
+        <var name="currentPoint" id="6353944221487047707" />
+        <var name="distance" id="6353944221487047707" />
+        <var name="graphics" id="6353944221487047707" />
       </scope>
-      <scope id="2149188974714278470" at="13,0,26,0">
-        <var name="graphics" id="2149188974714278470" />
+      <scope id="6353944221487047707" at="13,0,23,0">
+        <var name="graphics" id="6353944221487047707" />
       </scope>
-      <unit id="2149188974714278470" at="12,29,26,3" name="ExtendedRouteSolution.RobotWalksVar.ExtendedMars$1" />
-      <unit id="2149188974714278470" at="11,0,59,0" name="ExtendedRouteSolution.RobotWalksVar.ExtendedMars" />
+      <unit id="6353944221487047707" at="12,29,23,3" name="ExtendedRouteSolution.RobotWalksVar.marsExtended$1" />
+      <unit id="6353944221487047707" at="11,0,56,0" name="ExtendedRouteSolution.RobotWalksVar.marsExtended" />
     </file>
   </root>
 </debug-info>

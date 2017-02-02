@@ -7,10 +7,12 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">0bb22495-8965-4857-b2e5-c6c1ae35c7ce(ExtendedRoute)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
+    <dependency reexport="false">0bb22495-8965-4857-b2e5-c6c1ae35c7ce(ExtendedRoute)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:0bb22495-8965-4857-b2e5-c6c1ae35c7ce:ExtendedRoute" version="0" />
     <language slang="l:a5a3f524-2a15-4733-b0f0-2be616993f8d:Route" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>

@@ -14,14 +14,13 @@ public class Mars extends JFrame {
     protected void paintComponent(Graphics graphics) {
       super.paintComponent(graphics);
       Point point = new Point(17, 17);
-      int distance = 100;
       int leftDistance = 125;
       Point knownPoint = point;
 
       graphics.drawRect(12, 12, 800, 600);
-      knownPoint = moveForward(knownPoint, distance, graphics);
-      knownPoint = moveLeft(knownPoint, distance, graphics);
-      knownPoint = moveForward(knownPoint, distance, graphics);
+      knownPoint = moveForward(knownPoint, 100, graphics);
+      knownPoint = moveLeft(knownPoint, 125, graphics);
+      knownPoint = moveForward(knownPoint, 200, graphics);
     }
   };
   public void initialize() {
