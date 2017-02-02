@@ -6,6 +6,7 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="i8n6" ref="r:64d579f7-caba-44a4-bb25-9e317a59d220(Route.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -86,6 +87,19 @@
       <property role="20kJfa" value="length" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1RjsZLh2120" resolve="Variable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wHJDFkt$Z9">
+    <property role="EcuMT" value="6353944221488402377" />
+    <property role="TrG5h" value="forwardExpression" />
+    <property role="34LRSv" value="ForwardWitheX" />
+    <ref role="1TJDcQ" to="i8n6:1BtZ9A9_8aJ" resolve="Command" />
+    <node concept="1TJgyj" id="5wHJDFktFVO" role="1TKVEi">
+      <property role="IQ2ns" value="6353944221488430836" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sum" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzcpWvV" resolve="PlusExpression" />
     </node>
   </node>
 </model>

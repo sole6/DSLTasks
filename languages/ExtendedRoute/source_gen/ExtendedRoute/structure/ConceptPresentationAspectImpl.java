@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ExtendedCanvas = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ForwardExtended = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Variable = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_forwardExpression = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -24,6 +25,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_ForwardExtended;
       case 2:
         return props_Variable;
+      case 3:
+        return props_forwardExpression;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }

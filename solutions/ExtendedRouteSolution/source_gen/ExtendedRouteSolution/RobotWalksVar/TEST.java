@@ -8,7 +8,7 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.Dimension;
 
-public class marsExtended extends JFrame {
+public class TEST extends JFrame {
   private JPanel panel = new JPanel() {
     @Override
     protected void paintComponent(Graphics graphics) {
@@ -17,12 +17,12 @@ public class marsExtended extends JFrame {
       int leftDistance = 0;
       Point knownPoint = point;
 
-      graphics.drawRect(12, 12, 500, 500);
-      knownPoint = moveForward(knownPoint, 150, graphics);
+      graphics.drawRect(12, 12, 100, 100);
+      knownPoint = moveForward(knownPoint, 12 + 12, graphics);
     }
   };
   public void initialize() {
-    this.setTitle("marsExtended");
+    this.setTitle("TEST");
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.add(panel);
     panel.setPreferredSize(new Dimension(1600, 800));
@@ -30,7 +30,7 @@ public class marsExtended extends JFrame {
     this.setVisible(true);
   }
   public static void main(String[] args) {
-    marsExtended roboteRoute = new marsExtended();
+    TEST roboteRoute = new TEST();
     roboteRoute.initialize();
   }
 

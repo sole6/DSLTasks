@@ -13,6 +13,9 @@
     <file name="Variable_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ExtendedRoute.behavior.Variable_BehaviorDescriptor" />
     </file>
+    <file name="forwardExpression_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ExtendedRoute.behavior.forwardExpression_BehaviorDescriptor" />
+    </file>
   </root>
 </debug-info>
 

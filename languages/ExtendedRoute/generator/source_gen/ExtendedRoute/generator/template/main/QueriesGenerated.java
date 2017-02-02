@@ -7,10 +7,15 @@ import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 
 @Generated
 public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_6353944221486588988(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0xbb2249589654857L, 0xb2e5c6c1ae35c7ceL, 0x1dd373fc5108f645L, 0x582dbe9ad45a3f33L, "length")), MetaAdapterFactory.getProperty(0xbb2249589654857L, 0xb2e5c6c1ae35c7ceL, 0x1dd373fc51081080L, 0x1dd373fc510810b7L, "var"));
+  }
+  public static SNode sourceNodeQuery_6353944221488643428(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xbb2249589654857L, 0xb2e5c6c1ae35c7ceL, 0x582dbe9ad4764fc9L, 0x582dbe9ad476bef4L, "sum"));
   }
 }

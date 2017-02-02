@@ -9,16 +9,21 @@
     <import index="xgdg" ref="r:8a4135af-473a-47f6-ae2f-ade7bd95bb9a(ExtendedRoute.structure)" />
   </imports>
   <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+    </language>
     <language id="0bb22495-8965-4857-b2e5-c6c1ae35c7ce" name="ExtendedRoute">
-      <concept id="2149188974714250930" name="ExtendedRoute.structure.ExtendedCanvas" flags="ng" index="1cP1le">
-        <child id="6353944221486886810" name="variables" index="2csD40" />
+      <concept id="6353944221488402377" name="ExtendedRoute.structure.forwardExpression" flags="ng" index="2cmZ5j">
+        <child id="6353944221488430836" name="sum" index="2cmK1I" />
       </concept>
-      <concept id="2149188974714294400" name="ExtendedRoute.structure.Variable" flags="ng" index="1cQQdW">
-        <property id="2149188974714294455" name="var" index="1cQQdb" />
-      </concept>
-      <concept id="2149188974714353221" name="ExtendedRoute.structure.ForwardExtended" flags="ng" index="1cQSmT">
-        <reference id="6353944221486563123" name="length" index="2ctS6D" />
-      </concept>
+      <concept id="2149188974714250930" name="ExtendedRoute.structure.ExtendedCanvas" flags="ng" index="1cP1le" />
     </language>
     <language id="a5a3f524-2a15-4733-b0f0-2be616993f8d" name="Route">
       <concept id="4418417557367217615" name="Route.structure.Rectangle" flags="ng" index="3Hqoak">
@@ -40,20 +45,23 @@
       </concept>
     </language>
   </registry>
-  <node concept="1cP1le" id="5wHJDFkoqgr">
-    <property role="TrG5h" value="marsExtended" />
-    <node concept="3Hqoak" id="5wHJDFkoqhl" role="3Hqo8T">
+  <node concept="1cP1le" id="5wHJDFku5mi">
+    <property role="TrG5h" value="TEST" />
+    <node concept="3Hqoak" id="5wHJDFku5nc" role="3Hqo8T">
       <property role="3Hqoah" value="12" />
       <property role="3Hqoas" value="12" />
-      <property role="3Hqo5U" value="500" />
-      <property role="3Hqo5Z" value="500" />
+      <property role="3Hqo5U" value="100" />
+      <property role="3Hqo5Z" value="100" />
     </node>
-    <node concept="1cQQdW" id="5wHJDFkoqhM" role="2csD40">
-      <property role="TrG5h" value="length" />
-      <property role="1cQQdb" value="150" />
-    </node>
-    <node concept="1cQSmT" id="5wHJDFkoSaM" role="2gvV3K">
-      <ref role="2ctS6D" node="5wHJDFkoqhM" resolve="length" />
+    <node concept="2cmZ5j" id="5wHJDFku5ng" role="2gvV3K">
+      <node concept="3cpWs3" id="5wHJDFku5nh" role="2cmK1I">
+        <node concept="3cmrfG" id="5wHJDFku5CA" role="3uHU7w">
+          <property role="3cmrfH" value="12" />
+        </node>
+        <node concept="3cmrfG" id="5wHJDFku5nu" role="3uHU7B">
+          <property role="3cmrfH" value="12" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -3,13 +3,19 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="11,0,17,0" name="ExtendedRoute.generator.template.main.QueriesGenerated" />
+      <unit at="13,0,22,0" name="ExtendedRoute.generator.template.main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:96762654-5d9b-46b1-be9c-bb1be36e4ffd(ExtendedRoute.generator.template.main@generator)/6353944221486563137">
     <file name="QueriesGenerated.java">
-      <node id="6353944221486588995" at="13,112,14,341" concept="0" />
-      <scope id="6353944221486588989" at="13,112,14,341" />
+      <node id="6353944221486588995" at="15,112,16,341" concept="0" />
+      <scope id="6353944221486588989" at="15,112,16,341" />
+    </file>
+  </root>
+  <root nodeRef="r:96762654-5d9b-46b1-be9c-bb1be36e4ffd(ExtendedRoute.generator.template.main@generator)/6353944221488580845">
+    <file name="QueriesGenerated.java">
+      <node id="6353944221488643435" at="18,108,19,186" concept="0" />
+      <scope id="6353944221488643429" at="18,108,19,186" />
     </file>
   </root>
 </debug-info>
